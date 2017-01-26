@@ -74,4 +74,9 @@ docker_install() {
   is_success=true
 }
 
+restart_docker() {
+  exec_cmd "sudo service docker restart"
+}
+
 docker_install
+restart_docker
